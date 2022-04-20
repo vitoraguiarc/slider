@@ -1,0 +1,56 @@
+.slider {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background-color: burlywood;
+}
+
+.slider-button {
+    position: absolute;
+    font-size: 3rem;
+    color: transparent;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s;
+    user-select: none;
+}
+.slider-button:hover {
+    background-color: #0005;
+    color: #fff;
+}
+
+#proximo {
+    right: 0;
+}
+
+.slider-item-container {
+    height: 100%;
+    width: auto;
+    background-color: aqua;
+    display: flex;
+
+}
+
+.slider-item {
+    height: 100%;
+    width: 50vw;
+    background-color: blue;
+    transition: all 1s;
+}
+
+.slider-item:first-child {
+    margin-left: -50vw;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
